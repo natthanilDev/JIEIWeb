@@ -1,0 +1,266 @@
+:root {
+    --color: #959595
+}
+.ui {
+        cursor: pointer;
+    }
+
+.navbar {
+    background: #fff;
+    box-shadow: 0 0 2px var(--color);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.checkbox {
+    display: none;
+}
+
+.checkboxLabel {
+    display: none;
+}
+
+.display-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.display-menu li {
+    padding: 50px 0;
+}
+
+.display-menu li a,
+.display-menu li p {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 1.5px;
+}
+
+.menu-content {
+    position: absolute;
+    top: 100px;
+    background-color: #fff;
+    border-radius: 6px;
+    right: 0%;
+    max-width: 0;
+    overflow: hidden;
+    box-shadow: 0 0 2px var(--color);
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 100%;
+
+}
+
+.menu-list li {
+    padding: 30px 100px;
+    /* border-bottom: 1px solid var(--color); */
+
+
+}
+
+.menu-list li:hover {
+    background-color: #f0f0f0;
+    color: #868686;
+}
+
+.checkbox-list-menu {
+    display: none;
+}
+
+.checkbox-list-menu:checked~.menu-content {
+    position: absolute;
+    max-width: 100%;
+    top: 100px;
+    background-color: #fff;
+    border-radius: 6px 6px 0 0;
+    right: 150px;
+}
+
+.btnSignup {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1b29c4;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.checkboxLabelclode {
+    display: none;
+}
+
+.down-fill-list {
+    display: none;
+}
+
+.active {
+    transform: translateY(-10px);
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+   
+    
+
+}
+
+@media screen and (max-width:1040px) {
+    .menu-content {
+        text-align: center;
+        overflow: hidden;
+        opacity: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .down-fill-list {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        padding: 10px 15px;
+        background-color: red;
+        color: #fff;
+    }
+
+    .navbar-container {
+        padding: 0 50px;
+    }
+
+    .display-menu {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .checkbox-list-menu:checked~.menu-content {
+        position: absolute;
+        opacity: 1;
+        background-color: var(--color);
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 0;
+        max-width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .list-menu-mobile {
+        max-width: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        right: 0;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        height: 100vh;
+
+
+    }
+
+
+    .down-fill-list {
+        display: flex;
+    }
+
+    .display-menu {
+        display: flex;
+        flex-direction: column;
+
+        gap: 0px;
+    }
+
+    .checkboxLabel {
+        display: flex;
+        font-size: 50px;
+        padding: 30px 0;
+        text-shadow: 0 0 3px #000000;
+
+    }
+
+
+    /* .checkbox {
+    display: flex;
+} */
+
+    .checkbox:checked~.list-menu-mobile {
+        max-width: 100%;
+        right: 0;
+        top: 0;
+        opacity: 1;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+        background-color: #1c1c1cbd;
+    }
+
+    .checkboxLabelclode {
+        display: flex;
+        position: absolute;
+        top: 30px;
+        right: 50px;
+        font-size: 20px;
+        padding: 10px 15px;
+        color: #fff;
+        background-color: red;
+
+    }
+
+    .display-menu li a,
+    .down-fill {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        color: #f5f5f5;
+        letter-spacing: 1.5px;
+    }
+
+    .display-menu li p {
+        cursor: pointer;
+        color: #ffffff;
+
+    }
+.active {
+    transform: translateY(-10px);
+    font-weight: bold;
+    border-bottom: 2px solid #ffffff;
+   
+    
+
+}
+    
+
+}

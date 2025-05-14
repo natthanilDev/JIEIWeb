@@ -1,0 +1,215 @@
+:root {
+    --background: rgb(0, 0, 173)
+}
+
+.intoBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 100px;
+    margin: 50px 0;
+
+}
+
+.imgInto {
+    width: 100%;
+
+
+}
+
+.textInto {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+}
+
+.textBox1 p {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: rgb(0, 0, 137);
+
+}
+
+.textBox2 p {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.btnBox {
+    display: flex;
+    gap: 30px;
+}
+
+.btnBox button {
+    width: 300px;
+    padding: 20px 0;
+    border: none;
+    box-shadow: 0 0 2px #959595;
+    background-color: var(--background);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.btnBox button:hover {
+    background-color: rgb(0, 0, 221);
+    transform: scale(1.05);
+}
+
+.topicNew p {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.newBoxText {
+    width: 100%;
+    padding: 30px 0;
+    background-color: var(--background);
+    text-align: center;
+}
+
+.newBoxText p {
+    color: #fff;
+    font-size: 30px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.new-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 30px 50px;
+}
+
+.newBox {
+    box-shadow: 0 0 2px #959595;
+    padding: 20px 30px;
+}
+
+.imageNew {
+    height: 420px;
+}
+
+.imgNew {
+    width: 100%;
+}
+
+.contentNew p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+@media screen and (max-width:1200px) {
+    .intoBox {
+
+        padding: 0px 10px;
+        margin: 50px 0;
+
+    }
+
+    .btnBox button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .textBox1 p {
+        font-size: 30px;
+    }
+
+    .imageNew {
+        height: 250px;
+    }
+
+
+}
+
+@media screen and (max-width:800px) {
+
+    .intoBox {
+        margin: 150px 0 50px 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        height: auto;
+        margin: 0 60px;
+
+        text-align: center;
+    }
+
+    .imgInto img {
+        margin: 200px 0 50px 0;
+        width: 60%;
+    }
+
+    .textBox1 p {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+
+    .new-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin: 30px 50px;
+    }
+
+    .btnBox {
+        display: block;
+        margin: 0 0 50px 0;
+    }
+
+    .new-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageNew {
+        height: auto;
+    }
+
+    .topicNew {
+        text-align: center;
+    }
+
+    .btnBox button {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .newBox {
+        width: 80%;
+    }
+
+    .imageNew {
+        text-align: center;
+    }
+
+    .imgNew {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width:500px) {
+    .intoBox {
+      
+        align-items: center;
+        height: auto;
+        padding: 0px 0px;
+       
+    }
+
+    .new-container {
+        width: 100%;
+        justify-content: center;
+        margin: 30px 0;
+    }
+}

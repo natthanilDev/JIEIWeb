@@ -1,0 +1,22 @@
+.notFound{
+    height: 90vh;
+}
+.j404{
+    text-align: center;
+    padding: 200px 0 0px 0;
+    font-size: 200px;
+    color: rgb(0, 11, 167);
+    font-weight: 600;
+}
+.notURL{
+    text-align: center;
+    color: rgb(0, 11, 167);
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.gotohomepage{
+    text-align: center;
+    
+}
