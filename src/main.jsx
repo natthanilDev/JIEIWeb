@@ -6,9 +6,9 @@ import About from './about/about'
 import Menu1 from './menu1/menu1'
 import None404 from './404/404'
 import Contact from './contact/contact'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-const location = createBrowserRouter([
+const location = createHashRouter([
   {
     path : '/',
     element : <Index />,
